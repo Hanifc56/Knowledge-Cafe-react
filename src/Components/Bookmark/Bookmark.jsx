@@ -10,6 +10,6 @@ const Bookmark = ({ bookmark }) => {
   );
 };
 Bookmark.propTypes = {
-  bookmark: PropTypes.array.isRequired,
+  bookmark: PropTypes.object.isRequired,
 };
 export default Bookmark;
