@@ -1,12 +1,17 @@
 import "./App.css";
-import Blogs from "./Components/Header/Blogs/Blogs";
+import Blogs from "./Components/Blogs/Blogs";
+import Bookmark from "./Components/Bookmarks/Bookmark";
+
 import Header from "./Components/Header/Header";
 
 function App() {
   return (
     <>
       <Header></Header>
-      <Blogs></Blogs>
+      <div className="flex max-w-7xl mx-auto">
+        <Blogs></Blogs>
+        <Bookmark></Bookmark>
+      </div>
     </>
   );
 }
