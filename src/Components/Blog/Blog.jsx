@@ -1,3 +1,4 @@
+import { IoBookmarkOutline } from "react-icons/io5";
 import PropTypes from "prop-types";
 const Blog = ({ blog }) => {
   const {
@@ -26,8 +27,11 @@ const Blog = ({ blog }) => {
             <p> {posted_date} </p>
           </div>
         </div>
-        <div>
+        <div className="flex items-center">
           <span>{reading_time} min read</span>
+          <button className="ml-2 text-red-400 font-bold text-2xl">
+            <IoBookmarkOutline />
+          </button>
         </div>
       </div>
       <h1 className="text-4xl font-bold mb-3">{title}</h1>
